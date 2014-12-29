@@ -1,0 +1,20 @@
+CHANGELOG
+---------
+
+Revision 2013-02-05
+
+    * Bug fixes, documentation
+    * Added multi.exe allowing fast multiple IP lookups
+    
+Revision 2013-02-04
+
+    * Vastly improved memory usage - it no longer splits data into arrays
+      but uses data strings instead. Cut memory use by about 80% - 90%.
+    * PHP index lookup now uses a hash table instead of a binary search, cutting
+      some of the time.
+    * PHP speed ~40k lps
+    * Delphi speed ~1.1M lps
+
+Revision 2013-02-01
+
+    * Initial coding, PHP speed ~27k lps (lookups per second)
